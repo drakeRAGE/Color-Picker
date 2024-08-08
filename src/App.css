@@ -1,0 +1,143 @@
+.container {
+  max-width: 450px;
+  padding: 30px;
+  background: linear-gradient(145deg, #fbefef, #f1f1f1);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-left: 10px;
+}
+
+.search-bar {
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  padding: 15px;
+  border: 2px solid #e91e63;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(233, 30, 99, 0.1);
+}
+
+.search-bar input:focus {
+  border-color: #d81b60;
+  box-shadow: 0 0 10px rgba(216, 27, 96, 0.4);
+  outline: none;
+}
+
+.color-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.color-box {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.history {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #ddd;
+}
+
+.history h2 {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.history-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.history-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: auto;
+  }
+
+  .search-bar input {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .color-box,
+  .history-box {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+      padding: 15px;
+      margin: auto;
+    }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .color-box,
+  .history-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .color-grid,
+  .history-grid {
+    gap: 10px;
+  }
+
+  .history h2 {
+    font-size: 1.2rem;
+  }
+}
